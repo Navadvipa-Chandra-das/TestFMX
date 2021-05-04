@@ -67,7 +67,7 @@ __published:	// IDE-managed Components
   TEdit *Edit3;
   TDateColumn *DateColumn1;
   TComboEdit *ComboEdit1;
-  TTabControl *TabControl1;
+	TTabControl *tcTest;
   TTabItem *TabItem1;
   TTabItem *TabItem2;
   TCheckBox *cbBold;

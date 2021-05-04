@@ -2,25 +2,25 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>1899.12.30 00:00:00.000.491,=C:\C\TestFMX\Unit3.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.192,=C:\C\TestFMX\Unit3.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.430,C:\C\TestFMX\TestFMX.cbproj=C:\C\TestFMX\Project1.cbproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.389,C:\C\TestFMX\TestFMXPCH1.h=C:\C\TestFMX\Project1PCH1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.045,C:\C\TestFMX\Project1PCH1.h=C:\C\Project1PCH1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.787,C:\C\TestFMX\dm_Test.cpp=C:\C\TestFMX\Unit3.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.487,C:\C\TestFMX\FrameTest.fmx=C:\C\TestFMX\Unit3.fmx</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.081,C:\C\TestFMX\Project1.cbproj=C:\C\Project1.cbproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.807,=C:\C\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.787,C:\C\TestFMX\Unit3.cpp=C:\C\TestFMX\dm_Test.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.869,=C:\C\TestFMX\Unit3.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.536,C:\C\TestFMX\fm_TestFMX.fmx=C:\C\TestFMX\Unit1.fmx</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.487,C:\C\TestFMX\FrameTest.h=C:\C\TestFMX\Unit3.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.787,C:\C\TestFMX\dm_Test.h=C:\C\TestFMX\Unit3.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.192,=C:\C\TestFMX\Unit3.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.389,C:\C\TestFMX\Project1PCH1.h=C:\C\TestFMX\TestFMXPCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.430,C:\C\TestFMX\Project1.cbproj=C:\C\TestFMX\TestFMX.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.807,=C:\C\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.045,C:\C\Project1PCH1.h=C:\C\TestFMX\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.787,C:\C\TestFMX\Unit3.dfm=C:\C\TestFMX\dm_Test.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.487,C:\C\TestFMX\Unit3.cpp=C:\C\TestFMX\FrameTest.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.536,C:\C\TestFMX\Unit1.h=C:\C\TestFMX\fm_TestFMX.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.536,C:\C\TestFMX\Unit1.cpp=C:\C\TestFMX\fm_TestFMX.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.081,C:\C\Project1.cbproj=C:\C\TestFMX\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.487,C:\C\TestFMX\Unit3.h=C:\C\TestFMX\FrameTest.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.787,C:\C\TestFMX\Unit3.h=C:\C\TestFMX\dm_Test.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.729,C:\C\Unit1.h=C:\C\TestFMX\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.729,C:\C\Unit1.fmx=C:\C\TestFMX\Unit1.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.487,C:\C\TestFMX\Unit3.fmx=C:\C\TestFMX\FrameTest.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.536,C:\C\TestFMX\Unit1.fmx=C:\C\TestFMX\fm_TestFMX.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.729,C:\C\Unit1.cpp=C:\C\TestFMX\Unit1.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.619,=C:\C\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.729,C:\C\TestFMX\Unit1.cpp=C:\C\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.787,C:\C\TestFMX\dm_Test.dfm=C:\C\TestFMX\Unit3.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.729,C:\C\TestFMX\Unit1.h=C:\C\Unit1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.487,C:\C\TestFMX\FrameTest.cpp=C:\C\TestFMX\Unit3.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.536,C:\C\TestFMX\fm_TestFMX.cpp=C:\C\TestFMX\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.536,C:\C\TestFMX\fm_TestFMX.h=C:\C\TestFMX\Unit1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.729,C:\C\TestFMX\Unit1.fmx=C:\C\Unit1.fmx</Transaction>
   </Transactions>
 </BorlandProject>

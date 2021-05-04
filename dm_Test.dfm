@@ -10,8 +10,7 @@ object dmTest: TdmTest
       'Server=127.0.0.1'
       'OidAsBlob=Yes'
       'DriverID=PG_N'
-      'UnknownFormat=Error')
-    Connected = True
+      'UnknownFormat=BYTEA')
     LoginPrompt = False
     Transaction = trzTest
     Left = 25

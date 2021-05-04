@@ -39,6 +39,8 @@ void __fastcall TfmTestFMX::cfTestLoad(TObject *param_0)
   cfTest->Filer->ReadTextSettings( Edit4->TextSettings );
   cfTest->Filer->ReadTextSettings( Edit5->TextSettings );
   cfTest->Filer->ReadTextSettings( Edit6->TextSettings );
+  tcTest->TabIndex = cfTest->Filer->ReadInt();
+  edNumber->Text = cfTest->Filer->ReadString();
 }
 //--------0-------------------------------------------------------------------
 
@@ -61,6 +63,8 @@ void __fastcall TfmTestFMX::cfTestSave(TObject *param_0)
   cfTest->Filer->WriteTextSettings( Edit4->TextSettings );
   cfTest->Filer->WriteTextSettings( Edit5->TextSettings );
   cfTest->Filer->WriteTextSettings( Edit6->TextSettings );
+  cfTest->Filer->WriteInt( tcTest->TabIndex );
+  cfTest->Filer->WriteString( edNumber->Text );
 }
 //---------------------------------------------------------------------------
 

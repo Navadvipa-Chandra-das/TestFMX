@@ -11,12 +11,12 @@ object fmTestFMX: TfmTestFMX
   OnClose = FormClose
   OnDestroy = FormDestroy
   DesignerMasterStyle = 0
-  object TabControl1: TTabControl
+  object tcTest: TTabControl
     Align = Client
     Size.Width = 700.000000000000000000
     Size.Height = 460.000000000000000000
     Size.PlatformDefault = False
-    TabIndex = 2
+    TabIndex = 1
     TabOrder = 20
     TabPosition = PlatformDefault
     Sizes = (
@@ -218,7 +218,7 @@ object fmTestFMX: TfmTestFMX
       CustomIcon = <
         item
         end>
-      IsSelected = False
+      IsSelected = True
       Size.Width = 69.000000000000000000
       Size.Height = 26.000000000000000000
       Size.PlatformDefault = False
@@ -255,7 +255,7 @@ object fmTestFMX: TfmTestFMX
       CustomIcon = <
         item
         end>
-      IsSelected = True
+      IsSelected = False
       Size.Width = 69.000000000000000000
       Size.Height = 26.000000000000000000
       Size.PlatformDefault = False
@@ -294,8 +294,7 @@ object fmTestFMX: TfmTestFMX
     end
   end
   object cfTest: TNNConfig
-    StoreKind = skFile
-    Version = '8'
+    Version = '1'
     OnLoad = cfTestLoad
     OnSave = cfTestSave
     Connection = dmTest.coTest
