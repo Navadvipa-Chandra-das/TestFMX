@@ -16,7 +16,7 @@ object fmTestFMX: TfmTestFMX
     Size.Width = 700.000000000000000000
     Size.Height = 460.000000000000000000
     Size.PlatformDefault = False
-    TabIndex = 1
+    TabIndex = 2
     TabOrder = 20
     TabPosition = PlatformDefault
     Sizes = (
@@ -47,8 +47,8 @@ object fmTestFMX: TfmTestFMX
         Size.Height = 286.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 4
-        Viewport.Width = 680.000000000000000000
-        Viewport.Height = 261.000000000000000000
+        Viewport.Width = 700.000000000000000000
+        Viewport.Height = 286.000000000000000000
         object DateColumn1: TDateColumn
         end
       end
@@ -218,7 +218,7 @@ object fmTestFMX: TfmTestFMX
       CustomIcon = <
         item
         end>
-      IsSelected = True
+      IsSelected = False
       Size.Width = 69.000000000000000000
       Size.Height = 26.000000000000000000
       Size.PlatformDefault = False
@@ -230,14 +230,15 @@ object fmTestFMX: TfmTestFMX
       object meNumberWords: TMemo
         Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
         DataDetectorTypes = []
+        TextSettings.WordWrap = True
         Align = Bottom
         Position.Y = 64.000000000000000000
         Size.Width = 700.000000000000000000
         Size.Height = 370.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
-        Viewport.Width = 696.000000000000000000
-        Viewport.Height = 366.000000000000000000
+        Viewport.Width = 700.000000000000000000
+        Viewport.Height = 370.000000000000000000
       end
       object edNumber: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
@@ -255,7 +256,7 @@ object fmTestFMX: TfmTestFMX
       CustomIcon = <
         item
         end>
-      IsSelected = False
+      IsSelected = True
       Size.Width = 69.000000000000000000
       Size.Height = 26.000000000000000000
       Size.PlatformDefault = False
@@ -273,8 +274,8 @@ object fmTestFMX: TfmTestFMX
         Size.Height = 291.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
-        Viewport.Width = 637.000000000000000000
-        Viewport.Height = 287.000000000000000000
+        Viewport.Width = 641.000000000000000000
+        Viewport.Height = 291.000000000000000000
       end
       object edTestPtr: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
@@ -290,6 +291,20 @@ object fmTestFMX: TfmTestFMX
         Position.X = 168.000000000000000000
         Position.Y = 70.000000000000000000
         OnClick = edSizeOfWideCharClick
+      end
+      object Button1: TButton
+        Position.X = 304.000000000000000000
+        Position.Y = 70.000000000000000000
+        TabOrder = 3
+        Text = 'Button1'
+        OnClick = Button1Click
+      end
+      object Button2: TButton
+        Position.X = 432.000000000000000000
+        Position.Y = 30.000000000000000000
+        TabOrder = 4
+        Text = 'Button2'
+        OnClick = Button2Click
       end
     end
   end

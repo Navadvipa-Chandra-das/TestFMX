@@ -38,6 +38,8 @@ __published:	// IDE-managed Components
   TWideStringField *quTestNote;
   TWideStringField *guCountUserRegKey;
   TBlobField *guCountUserData;
+	TFDQuery *quUpdateBlob;
+  void __fastcall DataModuleCreate(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
   __fastcall TdmTest(TComponent* Owner);

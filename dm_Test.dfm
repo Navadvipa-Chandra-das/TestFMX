@@ -1,5 +1,6 @@
 object dmTest: TdmTest
   OldCreateOrder = False
+  OnCreate = DataModuleCreate
   Height = 293
   Width = 338
   object coTest: TFDConnection
@@ -8,9 +9,9 @@ object dmTest: TdmTest
       'User_Name=Navadvipa_Chandra_das'
       'Password=lila_smaranam'
       'Server=127.0.0.1'
-      'OidAsBlob=Yes'
+      'OidAsBlob=No'
       'DriverID=PG_N'
-      'UnknownFormat=BYTEA')
+      'UnknownFormat=Error')
     LoginPrompt = False
     Transaction = trzTest
     Left = 25
@@ -67,7 +68,7 @@ object dmTest: TdmTest
       'from'
       '  "NizhnyayaNavadvipa"."Users" a')
     Left = 25
-    Top = 84
+    Top = 132
     object quTestUserID: TIntegerField
       DisplayLabel = #1055#1050' '#1087#1086#1083#1100#1079#1086#1074#1072#1090#1077#1083#1103
       FieldName = 'UserID'
@@ -94,5 +95,24 @@ object dmTest: TdmTest
       Origin = '"Note"'
       Size = 100
     end
+  end
+  object quUpdateBlob: TFDQuery
+    Connection = coTest
+    Transaction = trzTest
+    SQL.Strings = (
+      'call "UpdateUserReg"( :KEY_, :LOB_ );')
+    Left = 155
+    Top = 31
+    ParamData = <
+      item
+        Name = 'KEY_'
+        ParamType = ptInput
+      end
+      item
+        Position = 2
+        Name = 'LOB_'
+        ArrayType = atArray
+        ParamType = ptInput
+      end>
   end
 end

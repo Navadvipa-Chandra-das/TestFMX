@@ -15,3 +15,9 @@ __fastcall TdmTest::TdmTest(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
+void __fastcall TdmTest::DataModuleCreate(TObject *Sender)
+{
+  coTest->Connected = true;
+}
+//---------------------------------------------------------------------------
+

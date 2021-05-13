@@ -6,6 +6,10 @@
 #include "fm_TestFMX.h"
 #include "TestFMXPCH1.h"
 #include "dm_Test.h"
+#include "NNStream.h"
+#include "NNCommon.h"
+#include <memory>
+#include "fm_TestRes.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma link "NNConfig"
@@ -163,6 +167,33 @@ void __fastcall TfmTestFMX::edTestPtrDblClick(TObject *Sender)
 void __fastcall TfmTestFMX::edSizeOfWideCharClick(TObject *Sender)
 {
   edSizeOfWideChar->Text = sizeof( WideChar );
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TfmTestFMX::Button1Click(TObject *Sender)
+{
+  NN::FormCreate( __classid( TfmTestRes ), &fmTestRes );
+  NN::FormShow( fmTestRes );
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TfmTestFMX::Button2Click(TObject *Sender)
+{
+  dmTest->guCount->Params->Items[ 0 ]->AsString = L"Первичный ключ 0";
+  dmTest->guCount->Open();
+
+  int N = 108;
+  TMemoryStream *ms = new TMemoryStream();
+  ms->Write( &N, sizeof( N ) );
+  ms->Position = 0;
+  try {
+    dmTest->guCount->Edit();
+    dmTest->guCountUserData->LoadFromStream( ms );
+  } __finally {
+    delete ms;
+  }
+  dmTest->guCount->Post();
+
 }
 //---------------------------------------------------------------------------
 

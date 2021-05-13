@@ -87,6 +87,8 @@ __published:	// IDE-managed Components
   TMemo *meTestPtr;
   TEdit *edTestPtr;
   TEdit *edSizeOfWideChar;
+	TButton *Button1;
+  TButton *Button2;
   void __fastcall cfTestLoad(TObject *param_0);
   void __fastcall cfTestSave(TObject *param_0);
   void __fastcall FormCreate(TObject *Sender);
@@ -101,8 +103,11 @@ __published:	// IDE-managed Components
   void __fastcall edNumberChange(TObject *Sender);
   void __fastcall edTestPtrDblClick(TObject *Sender);
   void __fastcall edSizeOfWideCharClick(TObject *Sender);
+	void __fastcall Button1Click(TObject *Sender);
+  void __fastcall Button2Click(TObject *Sender);
 private:	// User declarations
   TEdit *fCurrentEdit;
+  int PK = 0;
 public:		// User declarations
 	__fastcall TfmTestFMX(TComponent* Owner);
 };

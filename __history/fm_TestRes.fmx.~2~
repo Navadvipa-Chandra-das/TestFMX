@@ -1,0 +1,4 @@
+inherited fmTestRes: TfmTestRes
+  Caption = 'fmRes4'
+  DesignerMasterStyle = 0
+end

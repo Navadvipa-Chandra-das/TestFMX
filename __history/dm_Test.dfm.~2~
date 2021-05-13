@@ -1,5 +1,0 @@
-object dmTest: TdmTest
-  OldCreateOrder = False
-  Height = 293
-  Width = 338
-end
