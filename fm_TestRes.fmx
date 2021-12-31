@@ -1,7 +1,7 @@
 inherited fmTestRes: TfmTestRes
   Caption = 'fmRes4'
   DesignerMasterStyle = 0
-  inherited cfgRes: TNNConfig
+  inherited cfgRes: TNNFConfig
     Connection = dmTest.coTest
   end
 end

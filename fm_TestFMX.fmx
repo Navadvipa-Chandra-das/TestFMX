@@ -1,17 +1,10 @@
-object fmTestFMX: TfmTestFMX
-  Left = 0
-  Top = 0
+inherited fmTestFMX: TfmTestFMX
   Caption = #1058#1077#1089#1090' FMX'
   ClientHeight = 460
   ClientWidth = 700
-  FormFactor.Width = 320
-  FormFactor.Height = 480
-  FormFactor.Devices = [Desktop]
-  OnCreate = FormCreate
   OnClose = FormClose
-  OnDestroy = FormDestroy
   DesignerMasterStyle = 0
-  object tcTest: TTabControl
+  object tcTest: TTabControl [0]
     Align = Client
     Size.Width = 700.000000000000000000
     Size.Height = 460.000000000000000000
@@ -268,8 +261,8 @@ object fmTestFMX: TfmTestFMX
       object meTestPtr: TMemo
         Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
         DataDetectorTypes = []
-        Position.X = 32.000000000000000000
-        Position.Y = 126.000000000000000000
+        Position.X = 24.000000000000000000
+        Position.Y = 110.000000000000000000
         Size.Width = 641.000000000000000000
         Size.Height = 291.000000000000000000
         Size.PlatformDefault = False
@@ -301,23 +294,18 @@ object fmTestFMX: TfmTestFMX
       end
       object Button2: TButton
         Position.X = 432.000000000000000000
-        Position.Y = 30.000000000000000000
+        Position.Y = 70.000000000000000000
         TabOrder = 4
         Text = 'Button2'
         OnClick = Button2Click
       end
     end
   end
-  object cfTest: TNNConfig
-    Version = '1'
-    OnLoad = cfTestLoad
-    OnSave = cfTestSave
+  inherited cfgRes: TNNFConfig
     Connection = dmTest.coTest
-    Left = 392
-    Top = 368
   end
-  object ntwTest: TNNNumberToWords
-    Left = 609
-    Top = 256
+  object ntwTest: TNNFNumberToWords
+    Left = 91
+    Top = 16
   end
 end

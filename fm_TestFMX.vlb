@@ -13,9 +13,6 @@ Coordinates=10,234,93,36
 [Splitter1]
 Coordinates=387,166,62,36
 
-[cfTest]
-Coordinates=149,281,50,36
-
 [Label1]
 Coordinates=433,10,53,58
 
@@ -29,6 +26,6 @@ Coordinates=379,10,44,58
 Coordinates=193,166,44,58
 
 []
-Coordinates=113,234,71,36
+Coordinates=149,281,50,36
 Visible=True
 
