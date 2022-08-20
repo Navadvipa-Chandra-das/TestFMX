@@ -1,4 +1,0 @@
-inherited fmRes4: TfmRes4
-  Caption = 'fmRes4'
-  DesignerMasterStyle = 0
-end

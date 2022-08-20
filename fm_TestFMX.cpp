@@ -15,7 +15,8 @@
 #pragma package(smart_init)
 #pragma link "FMX_NNConfig"
 #pragma link "FMX_NNNumberToWords"
-#pragma link "FMX_fm_Res"
+#pragma link "FMX_NNFmRes"
+#pragma link "FMX_NNPanel15"
 #pragma resource "*.fmx"
 TfmTestFMX *fmTestFMX;
 //---------------------------------------------------------------------------
@@ -203,4 +204,15 @@ void __fastcall TfmTestFMX::Button2Click(TObject *Sender)
 
 }
 //---------------------------------------------------------------------------
+
+
+
+void __fastcall TfmTestFMX::NNFPanel151Resize(TObject *Sender)
+{
+  int N = NNFPanel151->Width;
+  Caption = IntToStr( N );
+}
+//---------------------------------------------------------------------------
+
+
 

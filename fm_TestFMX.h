@@ -1,4 +1,4 @@
-//---------------------------------------------------------------------------
+﻿//---------------------------------------------------------------------------
 
 #ifndef fm_TestFMXH
 #define fm_TestFMXH
@@ -53,9 +53,14 @@
 #include <FMX.Memo.Types.hpp>
 #include "FMX_NNConfig.h"
 #include "FMX_NNNumberToWords.h"
-#include "FMX_fm_Res.h"
+#include "FMX_NNFmRes.h"
+#include "FMX_NNPanel15.h"
+#include <FMX.Controls3D.hpp>
+#include <FMX.Objects3D.hpp>
+#include <System.Math.Vectors.hpp>
+#include <FMX.Objects.hpp>
 //---------------------------------------------------------------------------
-class TfmTestFMX : public TfmFRes
+class TfmTestFMX : public TfmfRes
 {
 __published:	// IDE-managed Components
 	TGrid *grUsers;
@@ -90,6 +95,11 @@ __published:	// IDE-managed Components
 	TButton *Button1;
   TButton *Button2;
 	TNNFNumberToWords *ntwTest;
+  TTabItem *TabItem4;
+  TNNFPanel15 *NNFPanel151;
+  TEdit *Edit7;
+  TPanel *Panel1;
+  TImage *Image1;
   void __fastcall cfgResLoad(TObject *param_0);
   void __fastcall cfgResSave(TObject *param_0);
   void __fastcall EditEnter(TObject *Sender);
@@ -104,8 +114,9 @@ __published:	// IDE-managed Components
   void __fastcall edSizeOfWideCharClick(TObject *Sender);
 	void __fastcall Button1Click(TObject *Sender);
   void __fastcall Button2Click(TObject *Sender);
+  void __fastcall NNFPanel151Resize(TObject *Sender);
 private:	// User declarations
-  typedef TfmFRes inherited;
+  typedef TfmfRes inherited;
   TEdit *fCurrentEdit;
   int PK = 0;
   void __fastcall TestKuKu( System::TObject* S

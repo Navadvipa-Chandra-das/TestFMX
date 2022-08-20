@@ -6,10 +6,10 @@
 #include <System.Classes.hpp>
 #include <FMX.Controls.hpp>
 #include <FMX.Forms.hpp>
-#include "FMX_fm_Res.h"
 #include "FMX_NNConfig.h"
+#include "FMX_NNFmRes.h"
 //---------------------------------------------------------------------------
-class TfmTestRes : public TfmFRes
+class TfmTestRes : public TfmfRes
 {
 __published:	// IDE-managed Components
 private:	// User declarations

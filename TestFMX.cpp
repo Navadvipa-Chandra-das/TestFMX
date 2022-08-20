@@ -7,11 +7,9 @@
 #pragma hdrstop
 #include <System.StartUpCopy.hpp>
 //---------------------------------------------------------------------------
-USEFORM("FrameTest.cpp", Frame3); /* TFrame: File Type */
-USEFORM("Unit3.cpp", Form3);
-USEFORM("..\NizhnyayaNavadvipa\FMX_fm_Res.cpp", fmRes);
 USEFORM("dm_Test.cpp", dmTest); /* TDataModule: File Type */
 USEFORM("fm_TestFMX.cpp", fmTestFMX);
+USEFORM("..\NewNavadvipa\FMX_NNFmRes.cpp", fmfRes);
 USEFORM("fm_TestRes.cpp", fmTestRes);
 //---------------------------------------------------------------------------
 extern "C" int FMXmain()
@@ -20,8 +18,9 @@ extern "C" int FMXmain()
   {
     Application->Initialize();
     Application->CreateForm(__classid(TdmTest), &dmTest);
-		Application->CreateForm(__classid(TfmTestFMX), &fmTestFMX);
-		Application->Name = L"TestFMX";
+     Application->CreateForm(__classid(TfmTestFMX), &fmTestFMX);
+     Application->CreateForm(__classid(TfmTestRes), &fmTestRes);
+     Application->Name = L"TestFMX";
     Application->Run();
   }
   catch (Exception &exception)
